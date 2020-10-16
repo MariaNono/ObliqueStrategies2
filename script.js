@@ -42,7 +42,6 @@ document.defaultView.addEventListener('keyup', (e) => {
     if (e.keyCode === 38) {
         degrees += 180
         card.style.transform = `rotateX(${degrees}deg)`;
-
         if (index < (drawn.length - 1)) {
             index++
             change(drawn[index])
