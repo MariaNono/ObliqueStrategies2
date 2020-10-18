@@ -49,8 +49,6 @@ document.defaultView.addEventListener('keyup', (e) => {
             randomize()
         }
     }
-    console.log(drawn)
-    console.log(result.length)
 })
 
 document.defaultView.addEventListener('keyup', (e) => {
@@ -61,4 +59,12 @@ document.defaultView.addEventListener('keyup', (e) => {
         card.style.transform = `rotateX(${degrees}deg)`;
         change(drawn[index])
     }
+})
+
+
+body.addEventListener('touchend', (e) => {
+    if (result.length === 0) return
+    degrees += 180
+    card.style.transform = `rotateX(${degrees}deg)`;
+    randomize()
 })
