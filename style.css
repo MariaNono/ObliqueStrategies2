@@ -5,6 +5,7 @@ body {
   font-family: sans-serif;
   color: #fff;
   transition: all ease 0.8s;
+  margin: 0;
 }
 
 .container {
@@ -66,4 +67,5 @@ h1 {
   bottom: 10%;
   transform: translateX(-50%);
   font-size: smaller;
+  opacity: 0.5;
 }
